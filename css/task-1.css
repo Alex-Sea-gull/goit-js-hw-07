@@ -1,14 +1,5 @@
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-ul {
-    list-style-type: none;
-}
-
-ol {
+ul,
+li {
     list-style-type: none;
 }
 

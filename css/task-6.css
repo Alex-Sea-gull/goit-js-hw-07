@@ -1,0 +1,57 @@
+.app-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 534px;
+    padding: 24px;
+    margin: 0 auto;
+    gap: 16px;
+}
+
+.controls-container {
+    display: flex;
+    justify-content: center;
+    width: 486px;
+    height: 104px;
+    padding: 32px;
+    gap: 16px;
+    background-color: #f6f6fe;
+    border-radius: 8px;
+}
+
+.controls-input {
+    border: 1px solid #808080;
+    border-radius: 8px;
+    padding: 8px 8px 8px 72px;
+    max-width: 150px;
+    height: 40px;
+}
+
+.controls-btn-create {
+    width: 120px;
+    padding: 8px 16px;
+    background-color: #4e75ff;
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+}
+
+.controls-btn-destroy {
+    width: 120px;
+    padding: 8px 16px;
+    background-color: #ff4e4e;
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+}
+
+.controls-result {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 486px;
+    padding: 32px;
+    gap: 16px;
+    background-color: #f6f6fe;
+    border-radius: 8px;
+}
