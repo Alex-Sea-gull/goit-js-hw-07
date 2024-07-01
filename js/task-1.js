@@ -1,3 +1,5 @@
+// "use strict";
+
 // const quantityLiItem = document.querySelectorAll(".form-item")
 // console.log(`Number of categories: ${quantityLiItem.length}`);
 
