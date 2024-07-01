@@ -1,66 +1,26 @@
-class Storage {
-  #items;
-
-  constructor(items) {
-    this.#items = items; 
+const images = [
+  {
+    url: "https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?dpr=2&h=750&w=1260",
+    alt: "White and Black Long Fur Cat",
+  },
+  {
+    url: "https://images.pexels.com/photos/213399/pexels-photo-213399.jpeg?dpr=2&h=750&w=1260",
+    alt: "Orange and White Koi Fish Near Yellow Koi Fish",
+  },
+  {
+    url: "https://images.pexels.com/photos/219943/pexels-photo-219943.jpeg?dpr=2&h=750&w=1260",
+    alt: "Group of Horses Running",
+  },
+  {
+    url: "https://cdn.pixabay.com/photo/2019/05/17/09/27/the-alps-4209272_1280.jpg",
+    alt: "Alpine Spring Meadows",
+  },
+  {
+    url: "https://cdn.pixabay.com/photo/2019/05/16/21/10/landscape-4208255_1280.jpg",
+    alt: "Nature Landscape",
+  },
+  {
+    url: "https://cdn.pixabay.com/photo/2019/05/17/04/35/lighthouse-4208843_1280.jpg",
+    alt: "Lighthouse Coast Sea",
   }
-
-  getItems() {
-    // console.log(`Items ${this.#items}`);
-    return this.#items; 
-  }
-
-  addItem(newItem) {
-    this.#items.push(newItem); 
-  }
-
-  removeItem(itemToRemove) {
-    const index = this.#items.indexOf(itemToRemove);
-    if (index !== -1) {
-      this.#items.splice(index, 1); 
-    }
-  }
-}
-
-
-
-const storage = new Storage(["Nanitoids", "Prolonger", "Antigravitator"]);
-console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]
-
-storage.addItem("Droid");
-console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]
-
-storage.removeItem("Prolonger");
-console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]
-
-storage.removeItem("Scaner");
-console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]
-
-
-
-
-// Створи клас Storage, який створюватиме об'єкти для управління складом товарів. Клас очікує лише один аргумент — початковий масив товарів, який записується до створеного об'єкта в приватну властивість items.
-
-// Оголоси наступні методи класу:
-
-// getItems() — повертає масив поточних товарів у приватній властивості items.
-// addItem(newItem) — приймає новий товар newItem і додає його до масиву товарів у приватну властивість items об'єкта.
-// removeItem(itemToRemove) — приймає рядок з назвою товару itemToRemove і видаляє його з масиву товарів у приватній властивості items об'єкта.
-
-
-// На що буде звертати увагу ментор при перевірці:
-
-// Оголошений клас Storage
-// У класі Storage оголошений метод getItems
-// У класі Storage оголошений метод addItem
-// У класі Storage оголошений метод removeItem
-// Властивість items у класі Storage оголошена приватною
-// Метод getItems повертає значення приватної властивості items екземпляра класу, який його викликає
-// Метод addItem змінює значення приватної властивості items екземпляра класу, який його викликає
-// Метод removeItem змінює значення приватної властивості items екземпляра класу, який його викликає
-// У результаті виклику new Storage(["Nanitoids", "Prolonger", "Antigravitator"]) значення змінної storage — це об'єкт
-// У обєкта storage немає публічної властивості items
-// Перший виклик storage.getItems() одразу після ініціалізації екземпляра повертає масив ["Nanitoids", "Prolonger", "Antigravitator"]
-// Другий виклик storage.getItems() після виклику storage.addItem("Droid") повертає масив ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]
-// Третій виклик storage.getItems() після виклику storage.removeItem("Prolonger") повертає масив ["Nanitoids", "Antigravitator", "Droid"]
-// Четвертий виклик storage.getItems() після виклику storage.removeItem("Scaner") повертає масив ["Nanitoids", "Antigravitator", "Droid"]
+];
