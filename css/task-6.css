@@ -1,4 +1,4 @@
-.app-box {
+.box {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -8,11 +8,10 @@
     gap: 16px;
 }
 
-.controls-container {
+#controls {
     display: flex;
     justify-content: center;
     width: 486px;
-    height: 104px;
     padding: 32px;
     gap: 16px;
     background-color: #f6f6fe;
@@ -22,8 +21,9 @@
 .controls-input {
     border: 1px solid #808080;
     border-radius: 8px;
-    padding: 8px 8px 8px 72px;
-    max-width: 150px;
+    text-align: center;
+    padding: 8px;
+    width: 150px;
     height: 40px;
 }
 
@@ -45,9 +45,10 @@
     color: #ffffff;
 }
 
-.controls-result {
+#boxes {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     width: 486px;
     padding: 32px;

@@ -1,15 +1,15 @@
-// "use strict";
+"use strict";
 
-// const quantityLiItem = document.querySelectorAll(".form-item")
-// console.log(`Number of categories: ${quantityLiItem.length}`);
+const quantityLiItem = document.querySelectorAll(".form-item")
+console.log(`Number of categories: ${quantityLiItem.length}`);
 
-// quantityLiItem.forEach(category => {
-//     const title = category.querySelector('.form-titles').textContent;
-//     const items = category.querySelectorAll('.form-list-item');
+quantityLiItem.forEach(category => {
+    const title = category.querySelector('.form-titles').textContent;
+    const items = category.querySelectorAll('.form-list-item');
 
-//     console.log(`category: ${title}`);
-//     console.log(`Elements: ${items.length}`);
-// })
+    console.log(`category: ${title}`);
+    console.log(`Elements: ${items.length}`);
+})
 
 
 // // З використанням властивостей і методів DOM-елементів, напиши скрипт, який:

@@ -11,32 +11,24 @@
   <body>
     <p><a href="./index.html">Go back</a></p>
 
-    <div class="app-box">
-      <div id="controls" class="controls-container">
+    <div class="box">
+      <div id="controls">
         <input
-          class="input-controls js-input-controls"
+          class="controls-input"
           type="number"
           min="1"
           max="100"
           step="1"
         />
-        <button
-          class="controls-btn-create create btn"
-          type="button"
-          data-create
-        >
+        <button class="controls-btn-create" type="button" data-create>
           Create
         </button>
-        <button
-          class="controls-btn-destroy destroy btn"
-          type="button"
-          data-destroy
-        >
+        <button class="controls-btn-destroy" type="button" data-destroy>
           Destroy
         </button>
       </div>
 
-      <div id="boxes" class="controls-results"></div>
+      <div id="boxes"></div>
     </div>
 
     <script src="./js/task-6.js" type="module"></script>
