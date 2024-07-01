@@ -1,3 +1,10 @@
+ul {
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
 li {
     list-style: none;
     width: 360px;
@@ -14,6 +21,7 @@ img {
 .gallery {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 48px 24px;
 }
 
