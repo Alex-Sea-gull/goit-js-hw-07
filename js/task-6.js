@@ -29,8 +29,8 @@ function createBoxes(amount) {
   let boxSize = 30;
   let addBox = ``;
   for (let i = 0; i < amount; i += 1) {
-    boxSize += 10;
     addBox += `<div style="background-color: ${getRandomHexColor()}; width: ${boxSize}px; height: ${boxSize}px"></div>`;
+    boxSize += 10;
   }
   createBox.innerHTML = addBox;
 }
